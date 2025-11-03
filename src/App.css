@@ -1543,7 +1543,7 @@ nav a:hover, nav a:focus {
     display: block;
   }
   nav a {
-    font-size: 1.0rem; /* AUMENTE aqui o tamanho desejado */
+    font-size: 0.8rem; /* AUMENTE aqui o tamanho desejado */
     padding: 5px 0;
     margin-left: 12px;
     margin-right: 12px;
@@ -1595,5 +1595,156 @@ nav a:hover, nav a:focus {
     color: #ff1818;
     font-weight: bold;
     text-align: center;
+  }
+}
+
+
+.historia-hero {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.historia-titulo {
+  color: #ff0d0d;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.historia-chamada {
+  color: #fff6c7;
+  font-size: 1.18rem;
+  margin-top: 8px;
+}
+.historia-linhagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.historia-mestres-cards {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.historia-mestre-card {
+  background: #201821;
+  border-radius: 15px;
+  box-shadow: 0 6px 28px #ffd80013;
+  padding: 20px 18px;
+  max-width: 900px;
+  min-width: 210px;
+  text-align: center;
+  position: relative;
+  margin: 32px auto 0 auto; /* centraliza sempre */
+}
+
+.historia-img-mestre {
+  width: 106px;
+  height: 106px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  border: 3px solid #ff0b0b;
+  box-shadow: 0 2px 14px #b2222239;
+}
+.historia-mestre-nome {
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 8px 0 7px 0;
+}
+.badge-mestre {
+  background: #b22222;
+  color: #fff;
+  font-size: 0.95rem;
+  border-radius: 7px;
+  padding: 2px 9px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.badge-mestre2 {
+  background: #000000;
+  color: #fff;
+  font-size: 0.95rem;
+  border-radius: 7px;
+  padding: 2px 9px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.badge-prof {
+  background: #ffd800;
+  color: #1a1a1a;
+  font-size: 0.93rem;
+  border-radius: 7px;
+  padding: 2px 9px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.historia-mestre-desc {
+  font-size: 1.01rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.historia-mestre-quote {
+  display: block;
+  color: #f36d6d;
+  font-style: italic;
+  margin-top: 6px;
+}
+.seta-linhagem {
+  font-size: 2.4rem;
+  color: #ffd800;
+  text-align: center;
+  margin-top: 12px;
+}
+.historia-projeto-ufpr {
+  background: #181920;
+  border-radius: 18px;
+  box-shadow: 0 12px 38px #ffffff10;
+  padding: 22px 16px 18px 16px;
+  margin: 0 auto 28px auto;
+  max-width: 600px;
+}
+.historia-projeto-titulo {
+  text-align: center;
+  color: #ff2e12;
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 13px;
+  letter-spacing: .5px;
+}
+.historia-projeto-texto {
+  color: #fff;
+  font-size: 1.09rem;
+  margin-top: 0;
+}
+.historia-projeto-caracteristicas {
+  margin: 16px 0 13px 0;
+  padding-left: 10px;
+  color: #5cffa6;
+  font-weight: 700;
+  list-style: none;
+  font-size: 1.05rem;
+}
+.historia-projeto-caracteristicas li {
+  margin-bottom: 5px;
+}
+.historia-quote-grande {
+  font-size: 1.14rem;
+  color: #ffd800;
+  font-weight: 500;
+  background: #191922;
+  border-left: 6px solid #ff0000;
+  padding: 17px 15px 14px 15px;
+  border-radius: 14px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .historia-mestre-card {
+    max-width: 98vw;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 7px;
   }
 }
