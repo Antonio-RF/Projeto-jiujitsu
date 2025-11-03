@@ -5,22 +5,22 @@ const albuns = [
     turma: "Escolinha de Iniciação",
     mes: "outubro",
     ano: "2025",
-    fotos: Array.from({ length: 14 }, (_, i) => `/fotos/EscolinhaIniciacao/outubro2025/outubro2025-${i + 1}.jpeg`),
-    capa: "/fotos/EscolinhaIniciacao/outubro2025/outubro2025-1.jpeg",
+    fotos: Array.from({ length: 14 }, (_, i) => process.env.PUBLIC_URL + `/fotos/EscolinhaIniciacao/outubro2025/outubro2025-${i + 1}.jpeg`),
+    capa: process.env.PUBLIC_URL + "/fotos/EscolinhaIniciacao/outubro2025/outubro2025-1.jpeg",
   },
   {
     turma: "Escolinha de Iniciação",
     mes: "setembro",
     ano: "2025",
-    fotos: Array.from({ length: 13 }, (_, i) => `/fotos/EscolinhaIniciacao/setembro2025/setembro2025-${i + 1}.jpeg`),
-    capa: "/fotos/EscolinhaIniciacao/setembro2025/setembro2025-1.jpeg",
+    fotos: Array.from({ length: 13 }, (_, i) => process.env.PUBLIC_URL + `/fotos/EscolinhaIniciacao/setembro2025/setembro2025-${i + 1}.jpeg`),
+    capa: process.env.PUBLIC_URL + "/fotos/EscolinhaIniciacao/setembro2025/setembro2025-1.jpeg",
   },
   {
     turma: "Treinos de Competição",
     mes: "setembro",
     ano: "2025",
-    fotos: Array.from({ length: 6 }, (_, i) => `/fotos/TreinoCompeticao/setembro2025/setembro2025-${i + 1}.png`),
-    capa: "/fotos/TreinoCompeticao/setembro2025/setembro2025-2.png",
+    fotos: Array.from({ length: 6 }, (_, i) => process.env.PUBLIC_URL + `/fotos/TreinoCompeticao/setembro2025/setembro2025-${i + 1}.png`),
+    capa: process.env.PUBLIC_URL + "/fotos/TreinoCompeticao/setembro2025/setembro2025-2.png",
   },
   // Adicione mais álbuns conforme desejar
 ];
