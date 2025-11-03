@@ -1,34 +1,73 @@
 import React, { useState } from "react";
 
-const fotos = [
-  { src: "/fotos/outubro/", turma: "Escolinha de Iniciação", mes: "outubro", ano: "2025" },
-  { src: "/fotos/treino2.jpg", turma: "Treinos de Competição", mes: "setembro", ano: "2025" },
-  { src: "/fotos/treino3.jpg", turma: "Escolinha de Iniciação", mes: "setembro", ano: "2025" },
-  { src: "/fotos/treino4.jpg", turma: "Treinos de Competição", mes: "outubro", ano: "2025" },
+const albuns = [
+  {
+    turma: "Escolinha de Iniciação",
+    mes: "outubro",
+    ano: "2025",
+    fotos: Array.from({ length: 14 }, (_, i) => `/fotos/EscolinhaIniciacao/outubro2025/outubro2025-${i + 1}.jpeg`),
+    capa: "/fotos/EscolinhaIniciacao/outubro2025/outubro2025-1.jpeg",
+  },
+  {
+    turma: "Escolinha de Iniciação",
+    mes: "setembro",
+    ano: "2025",
+    fotos: Array.from({ length: 13 }, (_, i) => `/fotos/EscolinhaIniciacao/setembro2025/setembro2025-${i + 1}.jpeg`),
+    capa: "/fotos/EscolinhaIniciacao/setembro2025/setembro2025-1.jpeg",
+  },
+  {
+    turma: "Treinos de Competição",
+    mes: "setembro",
+    ano: "2025",
+    fotos: Array.from({ length: 6 }, (_, i) => `/fotos/TreinoCompeticao/setembro2025/setembro2025-${i + 1}.png`),
+    capa: "/fotos/TreinoCompeticao/setembro2025/setembro2025-2.png",
+  },
+  // Adicione mais álbuns conforme desejar
 ];
 
-const ordenarAnos = (fotosArr) => {
-  const anos = [...new Set(fotosArr.map((f) => f.ano))];
-  return anos.sort((a, b) => parseInt(b) - parseInt(a));
-};
+function LightboxGrid({ fotos, aberto, onClose }) {
+  const [ampliada, setAmpliada] = useState(null);
 
-const meses = [
+  if (!aberto || !fotos.length) return null;
+
+  return (
+    <div className="modal-fotos-overlay" onClick={onClose}>
+      <div className="modal-fotos-box-grid" onClick={e => e.stopPropagation()}>
+        <button className="btn-close" onClick={onClose}>×</button>
+        <div className="modal-fotos-mosaico">
+          {fotos.map((f, i) => (
+            <div key={f + i} className="mosaico-img-wrapper" onClick={() => setAmpliada(i)}>
+              <img src={f} alt={`Foto do álbum`} loading="lazy" />
+            </div>
+          ))}
+        </div>
+        {ampliada !== null && (
+          <div className="lightbox-ampliada" onClick={() => setAmpliada(null)}>
+            <img src={fotos[ampliada]} alt="Foto ampliada" />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+const mesesLista = [
   "janeiro", "fevereiro", "março", "abril", "maio", "junho",
   "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
 ];
 
 export default function Fotos() {
-  const [ano, setAno] = useState("todos");
-  const [mes, setMes] = useState("todos");
-  const [turma, setTurma] = useState("todas");
+  const [f, setF] = useState({ ano: "todos", mes: "todos", turma: "todas" });
+  const [modal, setModal] = useState({ aberto: false, fotos: [] });
 
-  const anos = ordenarAnos(fotos);
-  const mesesUsados = [...new Set(fotos.map(f => f.mes))];
+  const anos = Array.from(new Set(albuns.map(a => a.ano))).sort((a, b) => parseInt(b)-parseInt(a));
+  const meses = Array.from(new Set(albuns.map(a => a.mes)));
+  const turmas = Array.from(new Set(albuns.map(a => a.turma)));
 
-  const fotosFiltradas = fotos.filter(f => 
-    (ano === "todos" || f.ano === ano) &&
-    (mes === "todos" || f.mes === mes) &&
-    (turma === "todas" || f.turma === turma)
+  const albunsFiltrados = albuns.filter(a =>
+    (f.ano === "todos"   || a.ano   === f.ano) &&
+    (f.mes === "todos"   || a.mes   === f.mes) &&
+    (f.turma === "todas" || a.turma === f.turma)
   );
 
   return (
@@ -42,24 +81,20 @@ export default function Fotos() {
         <div>
           <label>
             <span role="img" aria-label="Ano">📅</span>
-            <select value={ano} onChange={e => setAno(e.target.value)}>
+            <select value={f.ano} onChange={e => setF(f0 => ({ ...f0, ano: e.target.value }))}>
               <option value="todos">Ano</option>
-              {anos.map(anoOpt => (
-                <option value={anoOpt} key={anoOpt}>{anoOpt}</option>
-              ))}
+              {anos.map(ano => <option key={ano} value={ano}>{ano}</option>)}
             </select>
           </label>
         </div>
         <div>
           <label>
             <span role="img" aria-label="Mês">🗓️</span>
-            <select value={mes} onChange={e => setMes(e.target.value)}>
+            <select value={f.mes} onChange={e => setF(f0 => ({ ...f0, mes: e.target.value }))}>
               <option value="todos">Mês</option>
-              {meses.map(mesOpt =>
-                mesesUsados.includes(mesOpt) ? (
-                  <option value={mesOpt} key={mesOpt}>
-                    {mesOpt.charAt(0).toUpperCase() + mesOpt.slice(1)}
-                  </option>
+              {mesesLista.map(mes =>
+                meses.includes(mes) ? (
+                  <option key={mes} value={mes}>{mes.charAt(0).toUpperCase() + mes.slice(1)}</option>
                 ) : null
               )}
             </select>
@@ -68,35 +103,46 @@ export default function Fotos() {
         <div>
           <label>
             <span role="img" aria-label="Turma">🥋</span>
-            <select value={turma} onChange={e => setTurma(e.target.value)}>
+            <select value={f.turma} onChange={e => setF(f0 => ({ ...f0, turma: e.target.value }))}>
               <option value="todas">Todas as turmas</option>
-              <option value="Escolinha de Iniciação">Escolinha de Iniciação</option>
-              <option value="Treinos de Competição">Treinos de Competição</option>
+              {turmas.map(turma => <option key={turma} value={turma}>{turma}</option>)}
             </select>
           </label>
         </div>
       </div>
-      <div className="galeria-estilizada">
-        {fotosFiltradas.length === 0 && (
-          <div className="galeria-vazia">Nenhuma foto encontrada com os filtros selecionados.</div>
+      <div className="albuns-galeria-grid">
+        {albunsFiltrados.length === 0 && (
+          <div className="galeria-vazia">Nenhum álbum encontrado com os filtros selecionados.</div>
         )}
-        {fotosFiltradas.map((f, i) => (
+        {albunsFiltrados.map(album => (
           <div
-            className={`galeria-card ${f.turma === "Treinos de Competição" ? "turma-compet" : "turma-escolinha"}`}
-            key={f.src + i}
+            className={`album-card-turma ${album.turma === "Escolinha de Iniciação" ? "green-badge" : "red-badge"}`}
+            key={album.turma + album.mes + album.ano}
+            onClick={() => setModal({ aberto: true, fotos: album.fotos })}
+            style={{ cursor: "pointer" }}
           >
-            <div className="galeria-img-wrapper">
-              <img src={f.src} alt="Foto Jiu-Jitsu" loading="lazy" draggable="false" />
-              <span className="galeria-turma-badge">
-                {f.turma === "Treinos de Competição" ? "🔥 Treinos de Competição" : "🌱 Escolinha de Iniciação"}
+            <div className="album-img-capa">
+              <img src={album.capa} alt={`Capa do álbum`} />
+              <span className="album-badge">
+                {album.turma === "Escolinha de Iniciação"
+                  ? "🌱 Escolinha de Iniciação"
+                  : "🔥 Treinos de Competição"}
               </span>
             </div>
-            <div className="galeria-info">
-              <span className="galeria-data">{f.mes.charAt(0).toUpperCase() + f.mes.slice(1)} de {f.ano}</span>
+            <div className="album-info">
+              <b>
+                {album.mes.charAt(0).toUpperCase() + album.mes.slice(1)} de {album.ano}
+              </b>
+              <span className="album-qtd-fotos">{album.fotos.length} fotos</span>
             </div>
           </div>
         ))}
       </div>
+      <LightboxGrid
+        fotos={modal.fotos}
+        aberto={modal.aberto}
+        onClose={() => setModal({ aberto: false, fotos: [] })}
+      />
     </div>
   );
 }
