@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <header className="top-nav">
         <img src={logo} alt="Logo" className="nav-logo" />
         <nav>
