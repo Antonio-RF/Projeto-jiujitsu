@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import Noticias from "./pages/Noticias";
+import Fotos from "./pages/Fotos";
+import Contato from "./pages/Contato";
+import logo from "./logo_jiujitsu.png";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Router>
+      <header className="top-nav">
+        <img src={logo} alt="Logo" className="nav-logo" />
+        <nav>
+          <Link to="/">Início</Link>
+          <Link to="/noticias">Notícias</Link>
+          <Link to="/fotos">Fotos</Link>
+          <Link to="/contato">Contato</Link>
+        </nav>
       </header>
-    </div>
+
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/noticias" element={<Noticias />} />
+          <Route path="/fotos" element={<Fotos />} />
+          <Route path="/contato" element={<Contato />} />
+        </Routes>
+      </main>
+
+      <footer>
+        <p>© 2025 UFPR — Projeto de Extensão Jiu-Jitsu na Universidade</p>
+      </footer>
+    </Router>
   );
 }
 
 export default App;
+
+
