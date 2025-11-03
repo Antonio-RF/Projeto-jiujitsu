@@ -27,9 +27,9 @@ export default function Home() {
             </div>
           </div>
           <div className="sobre-content">
-            <p>
-              <strong>Jiu-Jitsu na Universidade</strong> é um projeto de extensão <b>gratuito e aberto</b> da <b>UFPR</b> que, há mais de <b>12 anos</b>, promove saúde, esporte e integração social através do Jiu-Jitsu.
-            </p>
+          <p>
+            <strong>Jiu-Jitsu na Universidade</strong> é um projeto de extensão <b>gratuito e aberto</b> da <b>UFPR</b>, coordenado pelo <strong>Prof. Dr. Tácito Pessoa de Souza Junior</strong> — faixa preta 3º grau. Há mais de <b>15 anos</b>, o projeto promove saúde, bem-estar e integração social por meio do ensino do Jiu-Jitsu, aproximando diferentes públicos da universidade ao esporte em um ambiente acolhedor e transformador.
+          </p>
             <ul className="sobre-list">
               <li><span className="sobre-bullet">✓</span> <b>Missão:</b> democratizar o esporte, proporcionando um ambiente inclusivo e acolhedor para todos.</li>
               <li><span className="sobre-bullet">✓</span> <b>Valores:</b> respeito, disciplina, convivência e superação individual e coletiva.</li>
