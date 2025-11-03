@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Projeto-jiujitsu/static/css/main.dd13cffb.css",
-    "main.js": "/Projeto-jiujitsu/static/js/main.d08651ee.js",
+    "main.css": "/Projeto-jiujitsu/static/css/main.b9e49414.css",
+    "main.js": "/Projeto-jiujitsu/static/js/main.17b1b628.js",
     "static/js/453.086766bc.chunk.js": "/Projeto-jiujitsu/static/js/453.086766bc.chunk.js",
     "static/media/logo_jiujitsu.png": "/Projeto-jiujitsu/static/media/logo_jiujitsu.b35cce0a1e99d38e6065.png",
     "static/media/logo_jiujitsu2.png": "/Projeto-jiujitsu/static/media/logo_jiujitsu2.caa6985372d7511117cf.png",
     "index.html": "/Projeto-jiujitsu/index.html",
-    "main.dd13cffb.css.map": "/Projeto-jiujitsu/static/css/main.dd13cffb.css.map",
-    "main.d08651ee.js.map": "/Projeto-jiujitsu/static/js/main.d08651ee.js.map",
+    "main.b9e49414.css.map": "/Projeto-jiujitsu/static/css/main.b9e49414.css.map",
+    "main.17b1b628.js.map": "/Projeto-jiujitsu/static/js/main.17b1b628.js.map",
     "453.086766bc.chunk.js.map": "/Projeto-jiujitsu/static/js/453.086766bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd13cffb.css",
-    "static/js/main.d08651ee.js"
+    "static/css/main.b9e49414.css",
+    "static/js/main.17b1b628.js"
   ]
 }
