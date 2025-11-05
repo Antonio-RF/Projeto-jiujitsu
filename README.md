@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# 🥋 Jiu-Jitsu na Universidade / Jiu-Jitsu at the University
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🇧🇷 Português
 
-## Available Scripts
+### 📖 Sobre o Projeto
+**Jiu-Jitsu na Universidade** é um projeto de extensão **gratuito e aberto** da **Universidade Federal do Paraná (UFPR)**, coordenado pelo **Prof. Dr. Tácito Pessoa de Souza Junior**.  
+O objetivo é promover a prática do **Jiu-Jitsu como atividade física, cultural e social**, incentivando a integração entre estudantes, servidores e a comunidade externa.
 
-In the project directory, you can run:
+O projeto é parte das iniciativas de extensão da UFPR, reforçando o compromisso da universidade com o bem-estar e o desenvolvimento integral de seus participantes.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 💻 Site do Projeto
+O site foi desenvolvido para divulgar informações sobre o projeto, horários de treino, professores, eventos e novidades.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔗 **Acesse o site:** [https://Antonio-rf.github.io/Projeto-jiujitsu/](https://Antonio-rf.github.io/Projeto-jiujitsu/)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🧰 Tecnologias Utilizadas
+- **React** — Framework principal do front-end  
+- **Vite** — Ferramenta de build e desenvolvimento rápido  
+- **Tailwind CSS** — Estilização moderna e responsiva  
+- **GitHub Pages** — Hospedagem gratuita e integração automática via GitHub Actions  
 
-### `npm run build`
+## English:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📖 About the Project
+**Jiu-Jitsu at the University** is a **free and open** extension project from the **Federal University of Paraná (UFPR)**, coordinated by **Prof. Dr. Tácito Pessoa de Souza Junior**.  
+The goal is to promote **Jiu-Jitsu as a physical, cultural, and social activity**, encouraging interaction among students, staff, and the community.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project is part of UFPR’s outreach initiatives, reinforcing the university’s commitment to well-being and personal development.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 💻 Project Website
+The website was developed to share information about the project, training schedules, instructors, events, and news.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🔗 **Visit the site:** [https://your-username.github.io/Projeto-jiujitsu/](https://your-username.github.io/Projeto-jiujitsu/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🧰 Technologies Used
+- **React** — Front-end framework  
+- **Vite** — Fast build and development tool  
+- **Tailwind CSS** — Modern and responsive styling  
+- **GitHub Pages** — Free hosting with automatic deployment through GitHub Actions  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
