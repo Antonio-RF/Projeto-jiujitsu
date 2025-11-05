@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../logo_jiujitsu.png"; // ajuste se necessário
-import logo2 from "../logo_jiujitsu2.png"; // ajuste se necessário
+import logo from "../logo_jiujitsu.png"; 
+import logo2 from "../logo_jiujitsu2.png";
 
 export default function Home() {
   return (
     <div className="page fade-in">
-      {/* TOPO igual */}
+      {}
       <div className="home-hero">
         <div className="home-logos-row">
           <img src={logo} alt="Logo Jiu-Jitsu" className="home-logo" />
@@ -17,7 +17,7 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Sobre o Projeto */}
+      {}
       <section className="home-section custom-sobre-section">
         <div className="sobre-layout">
           <div className="sobre-title-block">
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Horários das Aulas */}
+      {}
       <section className="home-section custom-horarios-section">
         <div className="horarios-header">
           <h2 className="sobre-title">Horários das Aulas</h2>
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mapa e endereço */}
+      {}
       <section className="info home-mapa mapa-simples">
         <div className="mapa-header">
           <h2 className="sobre-title">

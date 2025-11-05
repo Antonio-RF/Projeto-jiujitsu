@@ -22,7 +22,7 @@ const albuns = [
     fotos: Array.from({ length: 6 }, (_, i) => process.env.PUBLIC_URL + `/fotos/TreinoCompeticao/setembro2025/setembro2025-${i + 1}.png`),
     capa: process.env.PUBLIC_URL + "/fotos/TreinoCompeticao/setembro2025/setembro2025-2.png",
   },
-  // Adicione mais álbuns conforme desejar
+  // Adicionar aqui mais álbuns conforme desejar
 ];
 
 function LightboxGrid({ fotos, aberto, onClose }) {

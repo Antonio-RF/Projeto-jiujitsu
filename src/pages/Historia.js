@@ -15,7 +15,7 @@ export default function Historia() {
         </p>
       </section>
 
-      {/* 1. Balão mestre Elcio */}
+      {}
       <div className="historia-mestre-card">
         <img src={elcioImg} alt="Mestre Elcio Figueiredo" className="historia-img-mestre"/>
         <h2 className="historia-mestre-nome">
@@ -29,10 +29,10 @@ export default function Historia() {
         <span className="historia-mestre-quote">Respeito e Lealdade até o fim! OSS</span>
       </div>
 
-      {/* Seta opcional */}
+      {}
       <div className="seta-linhagem"><span>↓</span></div>
 
-      {/* 2. Balão Prof. Tácito */}
+      {}
       <div className="historia-mestre-card">
         <img src={tacitoImg} alt="Professor Tácito" className="historia-img-mestre"/>
         <h2 className="historia-mestre-nome">
@@ -48,7 +48,7 @@ export default function Historia() {
 
       <div className="seta-linhagem"><span>↓</span></div>
 
-      {/* 3. Balão do nascimento do projeto */}
+      {}
       <section className="historia-projeto-ufpr">
         <h2 className="historia-projeto-titulo">
           <span role="img" aria-label="oss">🥋</span> O nascimento do projeto na UFPR

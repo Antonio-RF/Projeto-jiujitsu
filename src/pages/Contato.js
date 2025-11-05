@@ -8,7 +8,7 @@ export default function Contato() {
         <div className="contato-divider"></div>
       </div>
       <div className="contato-grid-new">
-        {/* Redes do Projeto */}
+        {}
         <div className="contato-bloco contato-instagram">
           <h3>Projeto nas redes sociais</h3>
           <a
@@ -21,7 +21,7 @@ export default function Contato() {
           </a>
         </div>
 
-        {/* Redes Professor */}
+        {}
         <div className="contato-bloco contato-prof">
           <h3>Professor responsável</h3>
           <a
@@ -43,7 +43,7 @@ export default function Contato() {
           </a>
         </div>
 
-        {/* Treino presencial */}
+        {}
         <div className="contato-bloco contato-treino">
           <h3>Venha treinar presencialmente!</h3>
           <div className="contato-endereco">
