@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Projeto-jiujitsu/static/css/main.1344660e.css",
+    "main.css": "/Projeto-jiujitsu/static/css/main.feec3ac0.css",
     "main.js": "/Projeto-jiujitsu/static/js/main.412bb9dd.js",
     "static/js/453.086766bc.chunk.js": "/Projeto-jiujitsu/static/js/453.086766bc.chunk.js",
     "static/media/logo_jiujitsu.png": "/Projeto-jiujitsu/static/media/logo_jiujitsu.b35cce0a1e99d38e6065.png",
@@ -8,12 +8,12 @@
     "static/media/logo_jiujitsu2.png": "/Projeto-jiujitsu/static/media/logo_jiujitsu2.caa6985372d7511117cf.png",
     "static/media/elcio.png": "/Projeto-jiujitsu/static/media/elcio.03e166bb16c9cfede082.png",
     "index.html": "/Projeto-jiujitsu/index.html",
-    "main.1344660e.css.map": "/Projeto-jiujitsu/static/css/main.1344660e.css.map",
+    "main.feec3ac0.css.map": "/Projeto-jiujitsu/static/css/main.feec3ac0.css.map",
     "main.412bb9dd.js.map": "/Projeto-jiujitsu/static/js/main.412bb9dd.js.map",
     "453.086766bc.chunk.js.map": "/Projeto-jiujitsu/static/js/453.086766bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1344660e.css",
+    "static/css/main.feec3ac0.css",
     "static/js/main.412bb9dd.js"
   ]
 }
