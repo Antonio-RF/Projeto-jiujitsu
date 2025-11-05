@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Historia from "./pages/Historia";
 import Noticias from "./pages/Noticias";
@@ -9,7 +9,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <header className="top-nav">
         <img src={logo} alt="Logo" className="nav-logo" />
         <nav>
@@ -39,5 +39,4 @@ function App() {
 }
 
 export default App;
-
 
