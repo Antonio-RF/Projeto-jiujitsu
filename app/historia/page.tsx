@@ -2,114 +2,107 @@ import Image from "next/image"
 
 export default function Historia() {
   return (
-    <div className="historia-page page fade-in">
-      <section className="historia-hero">
-        <h1 className="historia-titulo">A História do Jiu-Jitsu na UFPR</h1>
-        <p className="historia-chamada">
-          Uma trajetória de tradição, respeito e evolução – da linhagem Gracie,
-          via mestre Elcio Figueiredo, ao projeto inovador conduzido pelo Prof.
-          Dr. Tácito na UFPR.
+    <div className="page">
+      {/* Hero */}
+      <section className="page-hero">
+        <h1 className="page-title">A Historia do Jiu-Jitsu na UFPR</h1>
+        <p className="page-subtitle">
+          Uma trajetoria de tradicao, respeito e evolucao - da linhagem Gracie ao projeto na UFPR.
         </p>
       </section>
 
-      <div className="historia-mestre-card">
-        <Image
-          src="/elcio.png"
-          alt="Mestre Elcio Figueiredo"
-          width={180}
-          height={180}
-          className="historia-img-mestre"
-        />
-        <h2 className="historia-mestre-nome">Mestre Elcio Figueiredo</h2>
-        <span className="badge-mestre">9º grau • Faixa Vermelha</span>
-        <p className="historia-mestre-desc">
-          Um dos nomes mais lendários do Jiu-Jitsu brasileiro, aluno direto de
-          Rolls Gracie e Carlson Gracie, fundador da tradicional{" "}
-          <strong>Integração Jiu-Jitsu</strong> em Santos/SP. Foram anos
-          dedicados à formação de atletas e professores com ênfase em respeito e
-          lealdade. Nos meses de setembro e novembro em Santos, celebrou-se seus
-          80 anos e os 30 anos da escola — um marco para a história do Jiu-Jitsu
-          nacional.
-        </p>
-        <span className="historia-mestre-quote">
-          Respeito e Lealdade até o fim! OSS
-        </span>
-      </div>
+      <div className="container">
+        {/* Timeline */}
+        <div className="timeline">
+          {/* Mestre Elcio */}
+          <div className="timeline-item">
+            <div className="timeline-marker"></div>
+            <div className="timeline-content">
+              <div className="person-card">
+                <div className="person-image">
+                  <Image
+                    src="/elcio.png"
+                    alt="Mestre Elcio Figueiredo"
+                    width={160}
+                    height={160}
+                  />
+                </div>
+                <div className="person-info">
+                  <span className="person-badge">9o grau - Faixa Vermelha</span>
+                  <h2 className="person-name">Mestre Elcio Figueiredo</h2>
+                  <p className="person-desc">
+                    Um dos nomes mais lendarios do Jiu-Jitsu brasileiro, aluno direto de
+                    Rolls Gracie e Carlson Gracie, fundador da tradicional{" "}
+                    <strong>Integracao Jiu-Jitsu</strong> em Santos/SP. Foram anos
+                    dedicados a formacao de atletas e professores com enfase em respeito e
+                    lealdade.
+                  </p>
+                  <blockquote className="person-quote">
+                    {`"Respeito e Lealdade ate o fim! OSS"`}
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div className="seta-linhagem">
-        <span>↓</span>
-      </div>
+          {/* Prof Tacito */}
+          <div className="timeline-item">
+            <div className="timeline-marker"></div>
+            <div className="timeline-content">
+              <div className="person-card">
+                <div className="person-image">
+                  <Image
+                    src="/tacito.jpeg"
+                    alt="Professor Tacito"
+                    width={160}
+                    height={160}
+                  />
+                </div>
+                <div className="person-info">
+                  <span className="person-badge">3o grau - Faixa Preta</span>
+                  <h2 className="person-name">Prof. Dr. Tacito Pessoa de Souza Junior</h2>
+                  <span className="person-role">Fundador do projeto Jiu-Jitsu na Universidade</span>
+                  <p className="person-desc">
+                    Aluno do Mestre Elcio, Prof. Tacito e Nutricionista, Doutor e
+                    Pos-Doutor em Ciencias do Esporte. Coordena com visao inclusiva o
+                    projeto desde seu inicio na UFPR, trazendo ensino gratuito e de
+                    excelencia para a universidade e sociedade.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div className="historia-mestre-card">
-        <Image
-          src="/tacito.jpeg"
-          alt="Professor Tácito"
-          width={180}
-          height={180}
-          className="historia-img-mestre"
-        />
-        <h2 className="historia-mestre-nome">
-          Prof. Dr. Tácito Pessoa de Souza Junior
-        </h2>
-        <span className="badge-prof">
-          Fundador do projeto Jiu-Jitsu na Universidade
-        </span>
-        <span className="badge-mestre2">3º grau • Faixa Preta</span>
-        <p className="historia-mestre-desc">
-          Aluno do Mestre Elcio, Prof. Tácito é Nutricionista, Doutor e
-          Pós-Doutor em Ciências do Esporte, e coordena com visão inclusiva o{" "}
-          <b>Projeto Jiu-Jitsu na Universidade</b> desde seu início na UFPR.
-          <br />
-          Legítimo representante da tradição Integração, expandiu o legado por
-          meio da educação, ciência e da prática esportiva responsável, trazendo
-          o ensino gratuito e de excelência para a universidade e sociedade.
-        </p>
-      </div>
+          {/* Projeto */}
+          <div className="timeline-item">
+            <div className="timeline-marker"></div>
+            <div className="timeline-content">
+              <div className="project-card">
+                <h2 className="project-title">O Projeto na UFPR</h2>
+                <p className="project-desc">
+                  Com raizes em decadas de tradicao, o <strong>Projeto Jiu-Jitsu na Universidade</strong>{" "}
+                  foi criado para democratizar o acesso a arte suave. Idealizado e conduzido por
+                  Tacito Junior, o projeto rapidamente se tornou referencia.
+                </p>
+                <ul className="project-features">
+                  <li>Aberto a comunidade interna e externa</li>
+                  <li>Respeita todos os niveis - do iniciante ao avancado</li>
+                  <li>Formou dezenas de alunos e impactou centenas de vidas</li>
+                  <li>Valores: respeito, inclusao, disciplina e superacao</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div className="seta-linhagem">
-        <span>↓</span>
-      </div>
-
-      <section className="historia-projeto-ufpr">
-        <h2 className="historia-projeto-titulo">
-          <span role="img" aria-label="oss">
-            🥋
-          </span>{" "}
-          O nascimento do projeto na UFPR
-        </h2>
-        <p className="historia-projeto-texto">
-          Com raízes fincadas em décadas de tradição, o{" "}
-          <b>Projeto Jiu-Jitsu na Universidade</b> foi criado para democratizar
-          o acesso à arte suave. Idealizado e conduzido por Tácito Junior ―
-          Professor Associado e pesquisador do Departamento de Educação
-          Física/UFPR ― o projeto rapidamente se tornou referência.
-        </p>
-        <ul className="historia-projeto-caracteristicas">
-          <li>✔️ Aberto à comunidade interna e externa</li>
-          <li>✔️ Respeita todos os níveis – do iniciante ao avançado</li>
-          <li>
-            ✔️ Formou dezenas de alunos, monitores e impactou positivamente
-            centenas de vidas
-          </li>
-          <li>
-            ✔️ Enaltece valores: respeito, inclusão, disciplina e superação
-            coletiva
-          </li>
-        </ul>
-        <p className="historia-projeto-texto">
-          Cada treino é herança de uma linhagem marcada por{" "}
-          <b>seriedade, amizade e ética</b> — um espaço onde o Jiu-Jitsu vai
-          muito além da luta: é transformação, ciência e vida!
-        </p>
-      </section>
-
-      <section className="historia-mestre-legado">
-        <blockquote className="historia-quote-grande">
-          {`"O verdadeiro legado não está apenas nas vitórias no tatame, mas em cada vida transformada pelo esporte, pelo respeito e pelo conhecimento que compartilhamos."`}
-          <br />
-          <span>- Prof. Dr. Tácito Pessoa de Souza Junior</span>
+        {/* Quote Final */}
+        <blockquote className="final-quote">
+          <p>
+            {`"O verdadeiro legado nao esta apenas nas vitorias no tatame, mas em cada vida transformada pelo esporte, pelo respeito e pelo conhecimento que compartilhamos."`}
+          </p>
+          <cite>- Prof. Dr. Tacito Pessoa de Souza Junior</cite>
         </blockquote>
-      </section>
+      </div>
     </div>
   )
 }
