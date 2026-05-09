@@ -231,10 +231,7 @@ body {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 16px;
-  background: linear-gradient(135deg, var(--color-text) 0%, var(--color-primary-light) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-text);
 }
 
 .hero-subtitle {
