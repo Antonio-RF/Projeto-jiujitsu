@@ -5,7 +5,34 @@ import Image from "next/image"
 
 const albuns = [
   {
-    turma: "Escolinha de Iniciacao",
+    turma: "Treinos de Competição",
+    mes: "abril",
+    ano: "2026",
+    fotos: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abril2026-1-k47AAGJf6SHZVB3dFfLlMZF5JJGSrV.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abril2026-2-ZVeSVRScgdgJiwBW1pQsk8flCkCudV.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abril2026-4-28w9pKE4ttPU4UsKm3gWS6c25ztjgl.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abril2026-5-M6p2qraqwul6yPs78TNNTOUPZ20TL1.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abril2026-6-IGR7h9XQe5TTwPQbF1uweryz8Wp3lW.jpeg",
+    ],
+    capa: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/abril2026-1-k47AAGJf6SHZVB3dFfLlMZF5JJGSrV.jpeg",
+  },
+  {
+    turma: "Treinos de Competição",
+    mes: "março",
+    ano: "2026",
+    fotos: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/marco2026-1.3-45rLPa8lU1G8GdV7NrKhLFPbV27I3t.png",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/marco2026-1.2-P9fIyNp7ZyEEP50CMiRpkPNZ9JoRjx.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/marco2026-2-hDibJwAK15sbORyleTHhzGX1ucGSyI.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/marco2026-3-WC2bdKSgOurGMkBz8b4bTzwzIHxqhz.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/marco2026-4-KLmd2B4itBArmFJX3Y4PtaMl8lmpNf.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/marco2026-6-Sgyyo8lHAcInrcrTY7Oczy1hXHe6nu.jpeg",
+    ],
+    capa: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/marco2026-1.3-45rLPa8lU1G8GdV7NrKhLFPbV27I3t.png",
+  },
+  {
+    turma: "Escolinha de Iniciação",
     mes: "outubro",
     ano: "2025",
     fotos: Array.from(
@@ -15,7 +42,7 @@ const albuns = [
     capa: "/fotos/EscolinhaIniciacao/outubro2025/outubro2025-1.jpeg",
   },
   {
-    turma: "Escolinha de Iniciacao",
+    turma: "Escolinha de Iniciação",
     mes: "setembro",
     ano: "2025",
     fotos: Array.from(
@@ -25,7 +52,7 @@ const albuns = [
     capa: "/fotos/EscolinhaIniciacao/setembro2025/setembro2025-1.jpeg",
   },
   {
-    turma: "Treinos de Competicao",
+    turma: "Treinos de Competição",
     mes: "setembro",
     ano: "2025",
     fotos: Array.from(
@@ -71,6 +98,7 @@ function LightboxGrid({
                 width={200}
                 height={200}
                 style={{ objectFit: "cover" }}
+                unoptimized={f.startsWith("http")}
               />
             </div>
           ))}
@@ -83,6 +111,7 @@ function LightboxGrid({
               width={1200}
               height={800}
               style={{ objectFit: "contain", maxWidth: "90vw", maxHeight: "90vh" }}
+              unoptimized={fotos[ampliada].startsWith("http")}
             />
           </div>
         )}
@@ -92,7 +121,7 @@ function LightboxGrid({
 }
 
 const mesesLista = [
-  "janeiro", "fevereiro", "marco", "abril", "maio", "junho",
+  "janeiro", "fevereiro", "março", "abril", "maio", "junho",
   "julho", "agosto", "setembro", "outubro", "novembro", "dezembro",
 ]
 
@@ -115,6 +144,10 @@ export default function Fotos() {
       (f.mes === "todos" || a.mes === f.mes) &&
       (f.turma === "todas" || a.turma === f.turma)
   )
+
+  const formatMes = (mes: string) => {
+    return mes.charAt(0).toUpperCase() + mes.slice(1)
+  }
 
   return (
     <div className="page">
@@ -141,7 +174,7 @@ export default function Fotos() {
             </select>
           </div>
           <div className="filter-group">
-            <label htmlFor="mes">Mes</label>
+            <label htmlFor="mes">Mês</label>
             <select
               id="mes"
               value={f.mes}
@@ -150,7 +183,7 @@ export default function Fotos() {
               <option value="todos">Todos</option>
               {mesesLista.filter(m => meses.includes(m)).map((mes) => (
                 <option key={mes} value={mes}>
-                  {mes.charAt(0).toUpperCase() + mes.slice(1)}
+                  {formatMes(mes)}
                 </option>
               ))}
             </select>
@@ -172,28 +205,29 @@ export default function Fotos() {
 
         <div className="albums-grid">
           {albunsFiltrados.length === 0 && (
-            <p className="no-results">Nenhum album encontrado com os filtros selecionados.</p>
+            <p className="no-results">Nenhum álbum encontrado com os filtros selecionados.</p>
           )}
           {albunsFiltrados.map((album) => (
             <div
-              className={`album-card ${album.turma === "Escolinha de Iniciacao" ? "album-beginner" : "album-advanced"}`}
+              className={`album-card ${album.turma === "Escolinha de Iniciação" ? "album-beginner" : "album-advanced"}`}
               key={album.turma + album.mes + album.ano}
               onClick={() => setModal({ aberto: true, fotos: album.fotos })}
             >
               <div className="album-cover">
                 <Image
                   src={album.capa}
-                  alt={`Album ${album.mes} ${album.ano}`}
+                  alt={`Álbum ${album.mes} ${album.ano}`}
                   width={400}
                   height={250}
                   style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                  unoptimized={album.capa.startsWith("http")}
                 />
                 <span className="album-badge">
-                  {album.turma === "Escolinha de Iniciacao" ? "Iniciacao" : "Competicao"}
+                  {album.turma === "Escolinha de Iniciação" ? "Iniciação" : "Competição"}
                 </span>
               </div>
               <div className="album-info">
-                <h3>{album.mes.charAt(0).toUpperCase() + album.mes.slice(1)} de {album.ano}</h3>
+                <h3>{formatMes(album.mes)} de {album.ano}</h3>
                 <span className="album-count">{album.fotos.length} fotos</span>
               </div>
             </div>
