@@ -25,14 +25,14 @@ export default function Home() {
           </div>
           <h1 className="hero-title">Jiu-Jitsu na Universidade</h1>
           <p className="hero-subtitle">
-            Treinos gratuitos abertos a comunidade academica e externa - UFPR
+            Treinos gratuitos abertos à comunidade acadêmica e externa - UFPR
           </p>
           <div className="hero-actions">
             <Link href="/contato" className="btn btn-primary">
               Comece a treinar
             </Link>
             <Link href="/historia" className="btn btn-secondary">
-              Conheca nossa historia
+              Conheça nossa história
             </Link>
           </div>
         </div>
@@ -47,11 +47,11 @@ export default function Home() {
           </div>
           <div className="about-content">
             <p className="about-text">
-              <strong>Jiu-Jitsu na Universidade</strong> e um projeto de extensao{" "}
+              <strong>Jiu-Jitsu na Universidade</strong> é um projeto de extensão{" "}
               gratuito e aberto da UFPR, coordenado pelo{" "}
-              <strong>Prof. Dr. Tacito Pessoa de Souza Junior</strong> - faixa
-              preta 3o grau. Ha mais de 15 anos, o projeto promove saude,
-              bem-estar e integracao social por meio do ensino do Jiu-Jitsu.
+              <strong>Prof. Dr. Tácito Pessoa de Souza Junior</strong> - faixa
+              preta 3º grau. Há mais de 15 anos, o projeto promove saúde,
+              bem-estar e integração social por meio do ensino do Jiu-Jitsu.
             </p>
             <div className="features-grid">
               <div className="feature-card">
@@ -60,7 +60,7 @@ export default function Home() {
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                   </svg>
                 </div>
-                <h3>Missao</h3>
+                <h3>Missão</h3>
                 <p>Democratizar o esporte em um ambiente inclusivo e acolhedor para todos.</p>
               </div>
               <div className="feature-card">
@@ -72,7 +72,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <h3>Valores</h3>
-                <p>Respeito, disciplina, convivencia e superacao individual e coletiva.</p>
+                <p>Respeito, disciplina, convivência e superação individual e coletiva.</p>
               </div>
               <div className="feature-card">
                 <div className="feature-icon">
@@ -93,52 +93,52 @@ export default function Home() {
       <section className="section section-dark">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Horarios das Aulas</h2>
+            <h2 className="section-title">Horários das Aulas</h2>
             <div className="section-divider"></div>
           </div>
           <div className="schedule-grid">
             <div className="schedule-card schedule-beginner">
               <div className="schedule-badge">Iniciantes</div>
-              <h3>Escolinha de Iniciacao</h3>
+              <h3>Escolinha de Iniciação</h3>
               <ul className="schedule-list">
                 <li>
                   <span className="label">Dias:</span>
                   <span className="value">Segunda, Quarta e Sexta</span>
                 </li>
                 <li>
-                  <span className="label">Horario:</span>
-                  <span className="value">12h as 13h15</span>
+                  <span className="label">Horário:</span>
+                  <span className="value">12h às 13h15</span>
                 </li>
                 <li>
-                  <span className="label">Publico:</span>
+                  <span className="label">Público:</span>
                   <span className="value">Exclusivo para iniciantes</span>
                 </li>
               </ul>
               <p className="schedule-desc">
-                Ideal para quem nunca treinou. Foco em fundamentos e tecnica basica.
-                Apos tres meses, pode migrar para os treinos de competicao.
+                Ideal para quem nunca treinou. Foco em fundamentos e técnica básica.
+                Após três meses, pode migrar para os treinos de competição.
               </p>
             </div>
             <div className="schedule-card schedule-advanced">
-              <div className="schedule-badge">Avancado</div>
-              <h3>Treinos de Competicao</h3>
+              <div className="schedule-badge">Avançado</div>
+              <h3>Treinos de Competição</h3>
               <ul className="schedule-list">
                 <li>
                   <span className="label">Dias:</span>
                   <span className="value">Segunda a Sexta</span>
                 </li>
                 <li>
-                  <span className="label">Horario:</span>
-                  <span className="value">18h30 as 20h30</span>
+                  <span className="label">Horário:</span>
+                  <span className="value">18h30 às 20h30</span>
                 </li>
                 <li>
-                  <span className="label">Publico:</span>
-                  <span className="value">Praticantes ou pos-Escolinha</span>
+                  <span className="label">Público:</span>
+                  <span className="value">Praticantes ou pós-Escolinha</span>
                 </li>
               </ul>
               <p className="schedule-desc">
-                Para quem deseja competir ou se desafiar mais! Tecnicas avancadas,
-                condicionamento e preparacao para campeonatos.
+                Para quem deseja competir ou se desafiar mais! Técnicas avançadas,
+                condicionamento e preparação para campeonatos.
               </p>
             </div>
           </div>
@@ -149,17 +149,17 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Como Chegar</h2>
+            <h2 className="section-title">Localização</h2>
             <div className="section-divider"></div>
           </div>
           <div className="location-content">
             <div className="location-info">
               <address className="location-address">
-                <strong>Ginasio UFPR - Campus Botanico</strong>
+                <strong>Ginásio UFPR - Campus Botânico</strong>
                 <br />
-                R. Coracao de Maria, 92
+                R. Coração de Maria, 92
                 <br />
-                Jardim Botanico, Curitiba - PR
+                Jardim Botânico, Curitiba - PR
               </address>
               <a
                 href="https://www.google.com/maps?q=R.+Cora%C3%A7%C3%A3o+de+Maria,+92+Jardim+Bot%C3%A2nico+Curitiba+PR"
