@@ -63,10 +63,10 @@ export default function Historia() {
                   <h2 className="person-name">Prof. Dr. Tacito Pessoa de Souza Junior</h2>
                   <span className="person-role">Fundador do projeto Jiu-Jitsu na Universidade</span>
                   <p className="person-desc">
-                    Aluno do Mestre Elcio, Prof. Tacito e Nutricionista, Doutor e
-                    Pos-Doutor em Ciencias do Esporte. Coordena com visao inclusiva o
+                    Aluno do Mestre Elcio, Prof. Tácito é Nutricionista, Doutor e
+                    Pós-Doutor em Ciências do Esporte. Coordena com visão inclusiva o
                     projeto desde seu inicio na UFPR, trazendo ensino gratuito e de
-                    excelencia para a universidade e sociedade.
+                    excelência para a universidade e sociedade.
                   </p>
                 </div>
               </div>
@@ -80,15 +80,15 @@ export default function Historia() {
               <div className="project-card">
                 <h2 className="project-title">O Projeto na UFPR</h2>
                 <p className="project-desc">
-                  Com raizes em decadas de tradicao, o <strong>Projeto Jiu-Jitsu na Universidade</strong>{" "}
+                  Com raizes em décadas de tradição, o <strong>Projeto Jiu-Jitsu na Universidade</strong>{" "}
                   foi criado para democratizar o acesso a arte suave. Idealizado e conduzido por
-                  Tacito Junior, o projeto rapidamente se tornou referencia.
+                  Tácito Junior, o projeto rapidamente se tornou referência.
                 </p>
                 <ul className="project-features">
                   <li>Aberto a comunidade interna e externa</li>
-                  <li>Respeita todos os niveis - do iniciante ao avancado</li>
+                  <li>Respeita todos os níveis - do iniciante ao avançado</li>
                   <li>Formou dezenas de alunos e impactou centenas de vidas</li>
-                  <li>Valores: respeito, inclusao, disciplina e superacao</li>
+                  <li>Valores: respeito, inclusão, disciplina e superação</li>
                 </ul>
               </div>
             </div>
@@ -98,9 +98,9 @@ export default function Historia() {
         {/* Quote Final */}
         <blockquote className="final-quote">
           <p>
-            {`"O verdadeiro legado nao esta apenas nas vitorias no tatame, mas em cada vida transformada pelo esporte, pelo respeito e pelo conhecimento que compartilhamos."`}
+            {`"O verdadeiro legado nao está apenas nas vitórias no tatame, mas em cada vida transformada pelo esporte, pelo respeito e pelo conhecimento que compartilhamos."`}
           </p>
-          <cite>- Prof. Dr. Tacito Pessoa de Souza Junior</cite>
+          <cite>- Prof. Dr. Tácito Pessoa de Souza Junior</cite>
         </blockquote>
       </div>
     </div>
