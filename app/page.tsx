@@ -7,8 +7,8 @@ const professores = [
     nome: "Prof. Dr. Tácito Pessoa de Souza Junior",
     cargo: "Coordenador e Professor",
     faixa: "Faixa Preta 4º Grau",
-    corFaixa: "#111",
-    corGrau: "#FFD700",
+    corFaixa: "#000000",
+    corGrau: "#FF2200",
     foto: "/tacito.png",
     descricao:
       "Doutor e Mestre em Ciências do Esporte pela UNICAMP e Pós-Doutor em Exercise Science pela Appalachian State University (EUA). Professor Associado do Departamento de Educação Física da UFPR e docente permanente do Programa de Pós-Graduação (Mestrado e Doutorado). Pesquisador nas áreas de Bioquímica do Exercício, Suplementação Nutricional e Treinamento de Força. Idealizador e coordenador do projeto \"Jiu-Jitsu na Universidade\" há mais de 14 anos, já formando mais de 100 atletas.",
