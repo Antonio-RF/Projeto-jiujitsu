@@ -11,7 +11,7 @@ const professores = [
     corGrau: "#FF2200",
     foto: "/tacito.png",
     descricao:
-      "Doutor e Mestre em Ciências do Esporte pela UNICAMP e Pós-Doutor em Exercise Science pela Appalachian State University (EUA). Professor Associado do Departamento de Educação Física da UFPR e docente permanente do Programa de Pós-Graduação (Mestrado e Doutorado). Pesquisador nas áreas de Bioquímica do Exercício, Suplementação Nutricional e Treinamento de Força. Idealizador e coordenador do projeto \"Jiu-Jitsu na Universidade\" há mais de 14 anos, já formando mais de 100 atletas.",
+      "Doutor e Mestre em Ciências do Esporte pela UNICAMP e Pós-Doutor em Exercise Science pela Appalachian State University (EUA). Professor Titular do Departamento de Educação Física da UFPR e docente permanente do Programa de Pós-Graduação (Mestrado e Doutorado). Pesquisador nas áreas de Bioquímica do Exercício, Suplementação Nutricional e Treinamento de Força. Idealizador e coordenador do projeto \"Jiu-Jitsu na Universidade\" há mais de 15 anos, já formando mais de 100 atletas.",
   },
   {
     nome: "Bernardo Nunes Paixão",
