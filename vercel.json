@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://antonio-rf.github.io/Projeto-jiujitsu/",
+      "permanent": true
+    }
+  ]
+}

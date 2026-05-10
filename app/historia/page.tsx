@@ -59,7 +59,7 @@ export default function Historia() {
                   />
                 </div>
                 <div className="person-info">
-                  <span className="person-badge">3o grau - Faixa Preta</span>
+                  <span className="person-badge">4o grau - Faixa Preta</span>
                   <h2 className="person-name">Prof. Dr. Tacito Pessoa de Souza Junior</h2>
                   <span className="person-role">Fundador do projeto Jiu-Jitsu na Universidade</span>
                   <p className="person-desc">

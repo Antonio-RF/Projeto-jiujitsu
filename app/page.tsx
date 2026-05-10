@@ -1,6 +1,30 @@
 import Image from "next/image"
 import Link from "next/link"
 
+// ─── Dados dos professores ───────────────────────────────────────────────────
+const professores = [
+  {
+    nome: "Prof. Dr. Tácito Pessoa de Souza Junior",
+    cargo: "Coordenador e Professor",
+    faixa: "Faixa Preta 4º Grau",
+    corFaixa: "#111",
+    corGrau: "#FFD700",
+    foto: "/tacito.png",
+    descricao:
+      "Doutor e Mestre em Ciências do Esporte pela UNICAMP e Pós-Doutor em Exercise Science pela Appalachian State University (EUA). Professor Associado do Departamento de Educação Física da UFPR e docente permanente do Programa de Pós-Graduação (Mestrado e Doutorado). Pesquisador nas áreas de Bioquímica do Exercício, Suplementação Nutricional e Treinamento de Força. Idealizador e coordenador do projeto \"Jiu-Jitsu na Universidade\" há mais de 14 anos, já formando mais de 100 atletas.",
+  },
+  {
+    nome: "Bernardo Nunes Paixão",
+    cargo: "Professor — Turma de Iniciação",
+    faixa: "Faixa Marrom",
+    corFaixa: "#5C3317",
+    corGrau: null,
+    foto: "/bernardo.png",
+    descricao:
+      "Aluno formado dentro do próprio projeto, Bernardo está há mais de 4 anos no Jiu-Jitsu na Universidade. Sua dedicação e evolução técnica o levaram a assumir um papel de liderança já na faixa roxa, quando começou a auxiliar nas aulas da turma de iniciação. Hoje, como faixa marrom, é referência de comprometimento e exemplo vivo de que o projeto transforma vidas, de aluno a professor.",
+  },
+]
+
 export default function Home() {
   return (
     <div className="page">
@@ -50,7 +74,7 @@ export default function Home() {
               <strong>Jiu-Jitsu na Universidade</strong> é um projeto de extensão{" "}
               gratuito e aberto da UFPR, coordenado pelo{" "}
               <strong>Prof. Dr. Tácito Pessoa de Souza Junior</strong> - faixa
-              preta 3º grau. Há mais de 15 anos, o projeto promove saúde,
+              preta 4º grau. Há mais de 15 anos, o projeto promove saúde,
               bem-estar e integração social por meio do ensino do Jiu-Jitsu.
             </p>
             <div className="features-grid">
@@ -89,8 +113,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Horarios Section */}
+      {/* ── SEÇÃO DE PROFESSORES (NOVA) ───────────────────────────────────── */}
       <section className="section section-dark">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Nossos Professores</h2>
+            <div className="section-divider"></div>
+          </div>
+
+          <div className="professors-grid">
+            {professores.map((prof, idx) => (
+              <div key={idx} className="professor-card">
+                {/* Foto — estatueta com fundo transparente */}
+                <div className="professor-photo-wrap">
+                  <div className="professor-glow" />
+                  <Image
+                    src={prof.foto}
+                    alt={`Foto de ${prof.nome}`}
+                    width={180}
+                    height={260}
+                    className="professor-photo"
+                  />
+                </div>
+
+                {/* Info */}
+                <div className="professor-info">
+                  {/* Badge da faixa */}
+                  <div className="professor-belt">
+                    <span
+                      className="belt-bar"
+                      style={{ backgroundColor: prof.corFaixa }}
+                    >
+                      {prof.corGrau && (
+                        <span
+                          className="belt-degree"
+                          style={{ backgroundColor: prof.corGrau }}
+                        />
+                      )}
+                    </span>
+                    <span
+                      className="belt-label"
+                      style={{
+                        backgroundColor: prof.corFaixa,
+                        color: prof.corFaixa === "#111" ? "#FFD700" : "#fff",
+                      }}
+                    >
+                      {prof.faixa}
+                    </span>
+                  </div>
+
+                  <h3 className="professor-name">{prof.nome}</h3>
+                  <p className="professor-cargo">{prof.cargo}</p>
+                  <p className="professor-desc">{prof.descricao}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* ── FIM DA SEÇÃO DE PROFESSORES ───────────────────────────────────── */}
+
+      {/* Horarios Section */}
+      <section className="section">
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Horários das Aulas</h2>
@@ -146,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* Localizacao Section */}
-      <section className="section">
+      <section className="section section-dark">
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">Localização</h2>
