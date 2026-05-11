@@ -15,13 +15,13 @@ const professores = [
   },
   {
     nome: "Bernardo Nunes Paixão",
-    cargo: "Professor — Turma de Iniciação",
+    cargo: "Instrutor — Turma de Iniciação",
     faixa: "Faixa Marrom",
     corFaixa: "#5C3317",
     corGrau: null,
     foto: "/bernardo.png",
     descricao:
-      "Aluno formado dentro do próprio projeto, Bernardo está há mais de 4 anos no Jiu-Jitsu na Universidade. Sua dedicação e evolução técnica o levaram a assumir um papel de liderança já na faixa roxa, quando começou a auxiliar nas aulas da turma de iniciação. Hoje, como faixa marrom, é referência de comprometimento e exemplo vivo de que o projeto transforma vidas, de aluno a professor.",
+      "Aluno formado dentro do próprio projeto, Bernardo está há mais de 4 anos no Jiu-Jitsu na Universidade. Sua dedicação e evolução técnica o levaram a assumir um papel de instrutor já na faixa roxa, quando começou a auxiliar nas aulas da turma de iniciação. Hoje, como faixa marrom, é referência de comprometimento, de aluno a instrutor.",
   },
 ]
 
@@ -117,7 +117,7 @@ export default function Home() {
       <section className="section section-dark">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Nossos Professores</h2>
+            <h2 className="section-title">Nossos Professores e Instrutores</h2>
             <div className="section-divider"></div>
           </div>
 
