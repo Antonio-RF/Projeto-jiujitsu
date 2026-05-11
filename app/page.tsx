@@ -117,7 +117,7 @@ export default function Home() {
       <section className="section section-dark">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Nossos Professores e Instrutores</h2>
+            <h2 className="section-title">Nosso Professor e Instrutores</h2>
             <div className="section-divider"></div>
           </div>
 
