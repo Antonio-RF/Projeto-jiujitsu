@@ -8,9 +8,9 @@ export function Header() {
   const pathname = usePathname()
 
   const links = [
-    { href: "/", label: "Inicio" },
-    { href: "/historia", label: "Historia" },
-    { href: "/noticias", label: "Noticias" },
+    { href: "/", label: "Início" },
+    { href: "/historia", label: "História" },
+    { href: "/noticias", label: "Notícias" },
     { href: "/fotos", label: "Fotos" },
     { href: "/contato", label: "Contato" },
   ]

@@ -18,10 +18,20 @@ const professores = [
     cargo: "Instrutor — Turma de Iniciação",
     faixa: "Faixa Marrom",
     corFaixa: "#5C3317",
-    corGrau: null,
+    corGrau: "#000000",
     foto: "/bernardo.png",
     descricao:
       "Aluno formado dentro do próprio projeto, Bernardo está há mais de 4 anos no Jiu-Jitsu na Universidade. Sua dedicação e evolução técnica o levaram a assumir um papel de instrutor já na faixa roxa, quando começou a auxiliar nas aulas da turma de iniciação. Hoje, como faixa marrom, é referência de comprometimento, de aluno a instrutor.",
+  },
+  {
+    nome: "Paulo Ricardo Ribas Pinto",
+    cargo: "Instrutor — Turma de Iniciação",
+    faixa: "Faixa Marrom",
+    corFaixa: "#5C3317",
+    corGrau: "#000000",
+    foto: "/paulo.png",
+    descricao:
+        "Integrante do projeto desde 2016, Paulo, de 39 anos, construiu sua trajetória no Jiu-Jitsu com dedicação e espírito de equipe. Ao longo dos anos, sua experiência dentro dos tatames e seu comprometimento com o projeto o tornaram uma referência para os alunos, sempre contribuindo com incentivo, disciplina e evolução técnica.",
   },
 ]
 
@@ -55,7 +65,7 @@ export default function Home() {
             <Link href="/contato" className="btn btn-primary">
               Comece a treinar
             </Link>
-            <Link href="/historia" className="btn btn-secondary">
+            <Link href="/história" className="btn btn-secondary">
               Conheça nossa história
             </Link>
           </div>
